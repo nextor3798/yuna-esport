@@ -1,0 +1,343 @@
+/* Example styles from your existing CSS */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.hero .button {
+    padding: 1rem 2rem;
+    background-color: #a12c2c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+body {
+    margin: 0 auto; /*pas de parge sur toute la page*/
+  }
+  
+  header {
+    display:flex; /*éléments les un à côté des autres*/
+    align-items: center; /*centrer les éléments*/
+    background-color: #bd0000; /*la couleur de la banière naviguation*/
+    opacity: 0.7; /*opacité de 0,7*/
+  }
+  
+  #logo{
+    width: 100px; /*largeur de 100% de mon logo*/
+    padding-left: 35px; /*marge interne pour décaler de 35px de la gauche*/
+  }
+  
+  section.top-page{
+    height: 92vh; /*hauteur de la section*/
+    background-image: url(images/image-intro.jpg); /*image de fond*/
+    background-size: cover; /*la taille de l'image : couvrir*/
+  }
+  
+  
+  /* Page d'accueil */
+  .home{
+    padding:5vh;
+    margin-left: 3%;
+    text-align: left;
+  }
+  .titre{
+    font-size: 10vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0px 0px;
+  }
+  .soustitre{
+    font-size: 5vh;
+    font-family:'Courier New', Courier, monospace; 
+    color: #fff;
+    margin: 0px 0px; /*pour enlever les marges*/
+  }
+  /* Fin de la page d'accueil */
+  
+  
+  /* menu de navigation */
+  nav{
+    display:flex; /*éléments les un à côté des autres*/
+    width: 100%; /*largeur de 100% de mon menu navigation*/
+    margin-right: 10px; /*marge externe droite, décale l'élément de 10px à droite*/
+    justify-content: space-between; /*pour que les éléments soient espacés*/ 
+    margin-left: 10px; /*marge externe gauche, décale l'élément de 10px à gauche*/
+  }
+  
+  nav div.onglets ul{ /*les onglets*/
+    display: flex; /*éléments les un à côté des autres*/
+    list-style: none; /*pour enlever les puces*/
+    align-items: center; /*pour centrer les éléments*/
+    text-decoration: none; /*pour enlever les décorations du texte*/
+  
+  }
+  nav div.onglets ul li a{ /*texte dans mes onglets*/
+    color: white; /* la couleur du texte dans la barre naviguation*/
+    margin-right: 50px; /*marge externe droite, décale l'élément de 50px à droite*/
+    font-size:large; /*taille de la police du texte large*/
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*police de mon texte*/
+    text-decoration: none; /*pour enlever les décorations du texte*/
+  }
+  
+  nav div.onglets ul li a:hover{
+    color: #000000; /* la couleur du texte qui va apparaître quand on va passer dessus*/
+  }
+  /* Fin du menue de navigation */
+  
+  
+  /*grille du site commence ici*/
+  .wrapper{
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #titre-contenu{ /*titre de la grille d'image*/
+    text-align: center; /*pour que le texte soit centré*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/*police du texte*/
+    font-weight: bold; /*texte en gras*/
+    margin-top: 100px; /*marge externe en haut, décale l'élément de 100px sur le dessus*/
+    margin-bottom: 50px; /*marge externe en bas, décale l'élément de 50px du bas*/
+    font-size: 40px; /*taille de la police du texte*/
+  }
+  
+  /*style de la grille d'images*/
+  .grille_images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*nombre de colones*/
+    grid-template-rows: repeat(4, 1fr); /*nombre de lignes*/
+    font-size: 3em;
+    text-align: center;
+    grid-gap: 10px; /*espace entre les images*/
+    max-height: 2000px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }/*Source pour la grille d'image : https://www.youtube.com/watch?v=EfYegS-yWu8*/
+  
+  /*Pour que les images aient toutes les mêmes caractéristiques*/
+  .im{ 
+    width: 100%; /*largeur*/
+    height: 100%; /*hauteur*/
+    object-fit: cover; /*couvrir la page*/
+    border-radius: 10px; /*réduire les angles de toutes les images*/
+  }
+  /*Fin*/
+  
+  
+  /*Début de la mosaïque*/
+  .im1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 100px;
+  }
+  
+  .im2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 100px;
+  }
+  
+  .im3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 100px;
+  }
+  
+  .im4{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    min-height: 100px;
+  }
+  
+  .im5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    min-height: 100px;
+  }
+  
+  .im6{
+    grid-column-start: 3; 
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    min-height: 100px;
+  }
+  
+  .im7{
+    grid-column-start: 1; /*grille, l'élément commence dans la colonne 1*/
+    grid-column-end: 2; /*grille, l'élément fini dans la colonne 2*/
+    grid-row-start: 2; /*grille, l'élément commence à la ligne 2*/
+    grid-row-end: 3; /*grille, l'élément fini à la colonne 3*/
+    min-height: 100px; /*hauteur minimum de l'image*/
+  }
+  /*Fin de la mosaïque*/
+  
+  /*texte sous mes images*/
+  #text-image1{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #text-image2{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #text-image3{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #text-image4{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #text-image5{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #text-image6{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #text-image7{
+    display:inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  /*Fin*/
+  
+  /*Fin de la grille d'image*/
+  
+  /*Début bas de page*/
+  footer{ /*conteneur de la grille du bas de page*/
+    background-color: rgb(181, 223, 181); /* la couleur de fond du conteneur*/
+  }
+  
+  .pieds{ /*pour que les éléments du bas de page aient les mêmes caractéristiques*/
+    display: grid; /*grille pour y mettre plusieurs éléments*/
+    grid-template-columns: 3fr 3fr 3fr; /*nombre de colonnes*/
+    padding-left: 5%; /*marge interne pour décaler de 5% de la gauche*/
+    padding-right: 5%; /*marge interne pour décaler de 5% de la droite*/
+    font-size: 15px; /*taille de la police du texte*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*police de mon texte*/
+    font-weight: bold; /*police en gras*/
+    height: 260px; /*taille de la section pieds en hauteur*/
+  }
+  
+  .pieds1{ /*élément 1 du bas de page*/
+    padding-top: 50px; /*marge interne en haut de l'élément de 50px pour le décaler sur le dessus*/
+    grid-column-start: 1; /*grille, l'élément commence dans la colonne 1*/
+    grid-column-end: 2; /*grille, l'élément commence dans la colonne 2*/
+  }
+  
+  .bouton{ /*bouton cliquable newsletter*/
+    background-color: white; /*couleur de mon bouton*/
+    width: 280px; /*largeur du bouton newsletter*/
+    padding: 10px; /*prend en compte toutes les marges internes, marges internes de 10px sur tous les côtés l'élément*/
+    border-radius: 20px; /*réduire les angle du bouton*/
+    cursor: pointer; /*quand on passe sur élément, la petite main apparaît pour montrer que c'est cliquable*/
+  }
+  
+  .bouton a{ /*texte dans le bouton*/
+    color: #000000; /*couleur du texte*/
+    text-decoration: none; /*pour enlever les décorations du texte*/
+    text-align: center; /*texte centré*/
+    padding: 10px; /*prend en compte toutes les marges internes, marges internes de 10px sur tous les côtés l'élément*/
+  }
+  
+  .pieds2{ /*élément 2 du bas de page*/
+    padding-top: 50px; /*marge interne en haut de l'élément de 50px pour le décaler sur le dessus*/
+    padding-left: 1525px; /*marge interne pour décaler de 175px de la gauche*/
+    grid-column-start: 3; /*grille, l'élément commence dans la colonne 3*/
+    grid-column-end: 4; /*grille, l'élément fini dans la colonne 3*/
+    text-align: center; /*texte centré*/
+  }
+  
+  .rs{ /*les icônes réseaux sociaux*/
+    width: 50px; /*largeur de toutes mes icônes réseaux sociaux*/ 
+  }
+  
+  .pieds3{ /*élément 3 du bas de page*/
+    grid-column-start: 2; /*grille, l'élément commence dans la colonne 2*/
+    grid-column-end: 3; /*grille, l'élément fini dans la colonne 3*/
+  }
+  
+  .pieds3 p{ /*texte de l'élément 3 du bas de page*/
+    font-size: 13px; /*taille de la police*/
+    text-align: center; /*texte centré*/
+  }
+  /*Fin bas de page*/
+  
+  /*bouton scroll*/
+  #scroll_to_top {
+    position: fixed; /*pour que le bouton soit fixe*/
+    width: 50px; /*taille du boton en largeur*/ 
+    height: 50px; /*taille du boton en hauteur*/  
+    bottom: 10px; /*le bouton est décalé de 10px du bas de la page*/ 
+    right: 1px; /* le bouton est décalé de 1px du côté droit*/
+    cursor: pointer; /*quand on passe sur élément, la petite main apparaît pour montrer que c'est cliquable*/
+  }
+  #scroll_to_top img {
+    width: 50px; /*largeur de l'image (flêche du bouton)*/
+  }
+  /*Fin de mon bouton scroll*/
+  
+  /* Pour les appareils ayant une largeur maximale de 600 pixels, par exemple les téléphones */
+  @media only screen and (max-width: 480px) {
+    /* Ajouter vos règles CSS pour les téléphones ici */
+  }
+  
+  /* Pour les appareils ayant une largeur minimale de 601 pixels, par exemple les PC */
+  @media only screen and (min-width: 601px) {
+    /* Ajouter vos règles CSS pour les PC ici */
+  }
+  

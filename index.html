@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Yuna - Structure E-Sport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;  
+            text-align: center;
+        }
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+        opacity: 0;
+        transform: translateY(-10px);
+        }
+        }
+        header h1 {
+            margin: 0;
+            color: #ff245b;
+            font-size: 2.5em; /* Ajuste la taille selon tes préférences */
+            text-transform: uppercase; /* Optionnel, pour mettre le texte en majuscules */
+            animation: fadeInOut 3s infinite; /* Animation qui dure 3 secondes et se répète infiniment */
+            transition: color 0.3s ease, transform 0.3s ease; /* Transition pour la couleur et le zoom */    
+            background-image: url('image/Yuna\ fond\ d\'ecran.png'); /* Remplace 'path/to/your/image.jpg' par le chemin de ton image */
+            background-size: cover; /* Pour couvrir tout le fond du h1 */
+            background-position: center; /* Pour centrer l'image */
+            padding: 10px 20px; /* Espace autour du texte */
+            border-radius: 10px; /* Coins arrondis */
+            display: inline-block; /* Ajuste la largeur du fond au texte */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour ajouter de la profondeur */
+            position: relative; /* Nécessaire pour les effets de texte */
+            overflow: hidden; /* Cache les parties de texte qui dépassent du fond */
+        }
+        header h1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Superposition sombre pour améliorer la lisibilité du texte */
+            z-index: 1;
+        }
+        header h1 span {
+            position: relative;
+            z-index: 2;
+        }
+        header h1:hover {
+            color: #ffffff; /* Changer la couleur du texte lors du survol */
+            transform: scale(1.1); /* Zoom avant 10% */
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ff245b;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease; /* Transition pour la couleur et le zoom */
+        }
+        nav a:hover {
+            color: #a81400; /* Changer la couleur du texte lors du survol */
+            transform: scale(1.1); /* Zoom avant 10% */
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #ff245b;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .staff, .team, .games, .events, .partners, .contact, .players {
+            margin-bottom: 60px;
+        }
+        .staff img, .team img, .players img, .games img, .partners img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact form input[type="submit"] {
+            background-color: #ff245b;
+            color: #121212;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff245b;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>La Yuna</h1>
+        <p>La structure e-sport qui domine le jeu</p>
+    </header>
+
+    <nav>
+        <a href="Présentation-staff.html">Staff</a>
+        <a href="#players">Joueurs</a>
+        <a href="#games">Jeux</a>
+        <a href="#events">Événements</a>
+        <a href="#partners">Partenaires</a>
+        <a href="#contact">Contact</a>
+        <a href="boutique.html">Boutique</a>
+    </nav>
+
+    <section id="players" class="players">
+        <h2>Nos Joueurs</h2>
+        <p>Découvrez les joueurs de La Yuna, compétiteurs dans l'âme.</p>
+        <div>
+            <!-- Exemple de joueurs -->
+            <img src="player-photo.jpg" alt="Photo du joueur">
+            <p><strong>Nom du Joueur 1</strong> - Jeu principal (ex: League of Legends)</p>
+            <p><strong>Nom du Joueur 2</strong> - Jeu principal (ex: CS:GO)</p>
+            <!-- Ajouter d'autres joueurs ici -->
+        </div>
+    </section>
+
+    <section id="games" class="games">
+        <h2>Nos Jeux</h2>
+        <p>Nous excellons dans plusieurs jeux compétitifs, dont :</p>
+        <ul>
+            <li>League of Legends</li>
+            <li>Counter-Strike: Global Offensive</li>
+            <li>Valorant</li>
+            <li>Fortnite</li>
+            <!-- Ajouter d'autres jeux si nécessaire -->
+        </ul>
+    </section>
+
+    <section id="events" class="events">
+        <h2>Événements</h2>
+        <p>Retrouvez-nous dans les tournois et événements majeurs de la scène e-sport.</p>
+        <p>Prochain événement : <strong>Tournoi XYZ</strong> - Date et détails ici.</p>
+        <!-- Ajouter une liste des événements futurs et passés -->
+    </section>
+
+    <section id="partners" class="partners">
+        <h2>Nos Partenaires</h2>
+        <p>Merci à nos sponsors et partenaires pour leur soutien précieux.</p>
+        <img src="partners-logo.jpg" alt="Logos des partenaires">
+        <!-- Ajouter des logos et des descriptions des partenaires -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <p>Vous souhaitez nous rejoindre ou en savoir plus ? Remplissez le formulaire ci-dessous :</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 La Yuna - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

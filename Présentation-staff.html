@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Staff de La Yuna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+        opacity: 0;
+        transform: translateY(-10px);
+        }
+        }
+        header h1 {
+            margin: 0;
+            color: #ff245b;
+            font-size: 2.5em; /* Ajuste la taille selon tes préférences */
+            text-transform: uppercase; /* Optionnel, pour mettre le texte en majuscules */
+            animation: fadeInOut 3s infinite; /* Animation qui dure 3 secondes et se répète infiniment */
+            transition: color 0.3s ease, transform 0.3s ease; /* Transition pour la couleur et le zoom */    
+            background-image: url('image/Yuna\ fond\ d\'ecran.png'); /* Remplace 'path/to/your/image.jpg' par le chemin de ton image */
+            background-size: cover; /* Pour couvrir tout le fond du h1 */
+            background-position: center; /* Pour centrer l'image */
+            padding: 10px 20px; /* Espace autour du texte */
+            border-radius: 10px; /* Coins arrondis */
+            display: inline-block; /* Ajuste la largeur du fond au texte */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour ajouter de la profondeur */
+            position: relative; /* Nécessaire pour les effets de texte */
+            overflow: hidden; /* Cache les parties de texte qui dépassent du fond */
+        }
+        header h1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Superposition sombre pour améliorer la lisibilité du texte */
+            z-index: 1;
+        }
+        header h1 span {
+            position: relative;
+            z-index: 2;
+        }
+        header h1:hover {
+            color: #ffffff; /* Changer la couleur du texte lors du survol */
+            transform: scale(1.1); /* Zoom avant 10% */
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ff245b;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease; /* Transition pour la couleur et le zoom */
+        }
+        nav a:hover {
+            color: #a81400; /* Changer la couleur du texte lors du survol */
+            transform: scale(1.1); /* Zoom avant 10% */
+        }
+        .staff-table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+        }
+        .staff-table th, .staff-table td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .staff-table th {
+            background-color: #333;
+        }
+        .staff-table img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Ajout de la transition pour l'effet de zoom */
+        }
+
+        .staff-table img:hover {
+        transform: scale(1.2); /* Zoom avant 10% */
+        }
+
+        .staff-table tr:nth-child(even) {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Notre Staff</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="#players">Joueurs</a>
+        <a href="#games">Jeux</a>
+        <a href="#events">Événements</a>
+        <a href="#partners">Partenaires</a>
+        <a href="#contact">Contact</a>
+        <a href="boutique.html">Boutique</a>
+    </nav>
+
+    <table class="staff-table">
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Nom</th>
+                <th>Rôle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="Staff/gravyton.png" alt="Gravyton"></td>
+                <td>Gravyton</td>
+                <td>Fondateur</td>
+            </tr>
+            <tr>
+                <td><img src="Staff/Taci_.webp" alt="Taci"></td>
+                <td>Taci_</td>
+                <td>Fondateur</td>
+            </tr>
+            <tr>
+                <td><img src="Staff/Responsable Discord.png" alt="YOH"></td>
+                <td>Yoh</td>
+                <td>Responsable Discord</td>
+            </tr>
+            <tr>
+                <td><img src="Staff/Sayca.png" alt="Sayca"></td>
+                <td>Sayca</td>
+                <td>Responsable Pole E-Sport RL</td>
+            </tr>
+            <tr>
+                <td><img src="Image/37b07fd0a27c02f3b17a5994e634ded4.png" alt="EVOX"></td>
+                <td>Evox</td>
+                <td>Responsable Pole E-Sport CS</td>
+            </tr>
+            <!-- Ajouter d'autres membres du staff ici -->
+        </tbody>
+    </table>
+
+</body>
+</html>

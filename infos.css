@@ -1,0 +1,224 @@
+body {
+  margin: 0 auto;
+  /*pas de parge sur toute la page*/
+}
+
+header {
+  display: flex;
+  /*éléments les un à côté des autres*/
+  align-items: center;
+  /*centrer les éléments*/
+  background-color: #bd0000;
+  /*la couleur de la banière naviguation*/
+  opacity: 0.7;
+  /*opacité de 0,7*/
+}
+
+#logo {
+  width: 100px;
+  /*largeur de 100% de mon logo*/
+  padding-left: 35px;
+  /*marge interne pour décaler de 35px de la gauche*/
+}
+
+/* menu de navigation */
+nav {
+  display: flex;
+  /*éléments les un à côté des autres*/
+  width: 100%;
+  /*largeur de 100% de mon menu navigation*/
+  margin-right: 10px;
+  /*marge externe droite, décale l'élément de 10px à droite*/
+  justify-content: space-between;
+  /*pour que les éléments soient espacés*/
+  margin-left: 10px;
+  /*marge externe gauche, décale l'élément de 10px à gauche*/
+}
+
+nav div.onglets ul {
+  /*les onglets*/
+  display: flex;
+  /*éléments les un à côté des autres*/
+  list-style: none;
+  /*pour enlever les puces*/
+  align-items: center;
+  /*pour centrer les éléments*/
+  text-decoration: none;
+  /*pour enlever les décorations du texte*/
+
+}
+
+nav div.onglets ul li a {
+  /*texte dans mes onglets*/
+  color: white;
+  /* la couleur du texte dans la barre naviguation*/
+  margin-right: 50px;
+  /*marge externe droite, décale l'élément de 50px à droite*/
+  font-size: large;
+  /*taille de la police du texte large*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*police de mon texte*/
+  text-decoration: none;
+  /*pour enlever les décorations du texte*/
+}
+
+nav div.onglets ul li a:hover {
+  color: #000000;
+  /* la couleur du texte qui va apparaître quand on va passer dessus*/
+}
+
+/* Fin du menue de navigation */
+
+
+/* page d'acceuil*/
+.main {
+  /*contenu principal*/
+  padding-left: 50px;
+  /*marge interne pour décaler de 50px de la gauche*/
+  padding-top: 100px;
+  /*marge interne en haut de l'élément de 100px pour le décaler sur le dessus*/
+  padding-bottom: 100px;
+  /*marge interne en bas de l'élément de 100px pour le décaler du bas*/
+  margin-right: 210px;
+  /*marge externe droite, décale l'élément de 210px à droite*/
+}
+
+.main h1 {
+  /*titre du contenu principal*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*police de mon texte*/
+}
+
+.p1 {
+  text-align: justify;
+  /*pour que le texte soit justifié*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*police de mon texte*/
+  font-size: 18px;
+  /*taille de la police du texte*/
+}
+
+/* fin de la page d'acceuil*/
+
+
+/*Début bas de page*/
+footer {
+  /*conteneur de la grille du bas de page*/
+  background-color: rgb(181, 223, 181);
+  /* la couleur de fond du conteneur*/
+}
+
+.pieds {
+  /*pour que les éléments du bas de page aient les mêmes caractéristiques*/
+  display: grid;
+  /*grille pour y mettre plusieurs éléments*/
+  grid-template-columns: 3fr 3fr 3fr;
+  /*nombre de colonnes*/
+  padding-left: 5%;
+  /*marge interne pour décaler de 5% de la gauche*/
+  padding-right: 5%;
+  /*marge interne pour décaler de 5% de la droite*/
+  font-size: 15px;
+  /*taille de la police du texte*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*police de mon texte*/
+  font-weight: bold;
+  /*police en gras*/
+  height: 260px;
+  /*taille de la section pieds en hauteur*/
+}
+
+.pieds1 {
+  /*élément 1 du bas de page*/
+  padding-top: 50px;
+  /*marge interne en haut de l'élément de 50px pour le décaler sur le dessus*/
+  grid-column-start: 1;
+  /*grille, l'élément commence dans la colonne 1*/
+  grid-column-end: 2;
+  /*grille, l'élément commence dans la colonne 2*/
+}
+
+.bouton {
+  /*bouton cliquable newsletter*/
+  background-color: black;
+  /*couleur de mon bouton*/
+  width: 280px;
+  /*largeur du bouton newsletter*/
+  padding: 10px;
+  /*prend en compte toutes les marges internes, marges internes de 10px sur tous les côtés l'élément*/
+  border-radius: 20px;
+  /*réduire les angle du bouton*/
+  cursor: pointer;
+  /*quand on passe sur élément, la petite main apparaît pour montrer que c'est cliquable*/
+}
+
+.bouton a {
+  /*texte dans le bouton*/
+  color: #fff;
+  /*couleur du texte*/
+  text-decoration: none;
+  /*pour enlever les décorations du texte*/
+  text-align: center;
+  /*texte centré*/
+  padding: 10px;
+  /*prend en compte toutes les marges internes, marges internes de 10px sur tous les côtés l'élément*/
+}
+
+.pieds2 {
+  /*élément 2 du bas de page*/
+  padding-top: 50px;
+  /*marge interne en haut de l'élément de 50px pour le décaler sur le dessus*/
+  padding-left: 175px;
+  /*marge interne pour décaler de 175px de la gauche*/
+  grid-column-start: 3;
+  /*grille, l'élément commence dans la colonne 3*/
+  grid-column-end: 4;
+  /*grille, l'élément fini dans la colonne 3*/
+  text-align: center;
+  /*texte centré*/
+}
+
+.rs {
+  /*les icônes réseaux sociaux*/
+  width: 50px;
+  /*largeur de toutes mes icônes réseaux sociaux*/
+}
+
+.pieds3 {
+  /*élément 3 du bas de page*/
+  grid-column-start: 2;
+  /*grille, l'élément commence dans la colonne 2*/
+  grid-column-end: 3;
+  /*grille, l'élément fini dans la colonne 3*/
+}
+
+.pieds3 p {
+  /*texte de l'élément 3 du bas de page*/
+  font-size: 13px;
+  /*taille de la police*/
+  text-align: center;
+  /*texte centré*/
+}
+
+/*Fin bas de page*/
+
+/*bouton scroll*/
+#scroll_to_top {
+  position: fixed;
+  /*pour que le bouton soit fixe*/
+  width: 50px;
+  /*taille du boton en largeur*/
+  height: 50px;
+  /*taille du boton en hauteur*/
+  bottom: 10px;
+  /*le bouton est décalé de 10px du bas de la page*/
+  right: 1px;
+  /* le bouton est décalé de 1px du côté droit*/
+  cursor: pointer;
+  /*quand on passe sur élément, la petite main apparaît pour montrer que c'est cliquable*/
+}
+
+#scroll_to_top img {
+  width: 50px;
+  /*largeur de l'image (flêche du bouton)*/
+}
